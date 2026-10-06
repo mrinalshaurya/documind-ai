@@ -1,0 +1,9 @@
+Engineered an end-to-end Retrieval-Augmented Generation (RAG) backend API that ingests dense technical PDFs and provides hallucination-free, cited answers using vector similarity search.
+
+Key Technical Highlights:
+• Architected a modular REST API using FastAPI, LangChain Expression Language (LCEL), and OpenAI's gpt-4o-mini.
+• Implemented semantic document chunking (RecursiveCharacterTextSplitter) and vector embeddings with local ChromaDB storage.
+• Built a citation engine mapping LLM responses back to original source page numbers, reducing hallucination risk.
+• Designed asynchronous endpoints for document ingestion (/upload) and real-time context retrieval (/query) with Swagger UI documentation.
+
+Tech Stack: Python, FastAPI, LangChain, ChromaDB, OpenAI API, PyPDF, Pydantic, Uvicorn.

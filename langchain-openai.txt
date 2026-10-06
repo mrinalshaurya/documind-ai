@@ -1,0 +1,17 @@
+documind-ai/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py              # FastAPI app endpoints and entry point
+│   ├── config.py            # Environment variables and settings
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── pdf_loader.py    # Chunking & PDF text extraction
+│   │   ├── vector_store.py  # ChromaDB embedding & retrieval engine
+│   │   └── rag_chain.py     # Prompt engineering & LLM response logic
+│   └── schemas.py           # Pydantic data models for request/response
+│
+├── storage/                 # Local directory where ChromaDB stores vectors
+├── .env                     # API keys (OpenAI / HuggingFace)
+├── requirements.txt         # Project dependencies
+└── README.md                # Comprehensive documentation for GitHub/LinkedIn
